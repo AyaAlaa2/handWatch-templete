@@ -1,0 +1,955 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*title for all sections*/
+.TitleOfSection{
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: block;
+    font-family: "Arima", serif;
+}
+
+/*line for all website*/
+.line{
+    width: 120px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: rgb(120, 42, 17);
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: -5px;
+}
+
+/*Overlay Page*/
+.overlayPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+/*ALl page have width 80%*/
+.pages{
+    width: 80%;
+    margin: auto;
+}
+
+/*Container for Elements3*/
+.containerElements3{
+    overflow: auto;
+}
+
+/*All container have 3 divs*/
+.Elements3{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(120, 42, 17);
+    border-radius: 20px;
+}
+
+/*2nd div of page have 3 divs*/
+.sndElements{
+    margin: 0 5%;
+}
+
+/*based Color*/
+.basedColor{
+    color: rgb(120, 42, 17 );
+}
+
+/*Yellow Color*/
+.yellowColor{
+    color: rgb(255, 191, 63);
+}
+
+/*Red color*/
+.redColor{
+    color: rgb(157, 0, 0);
+}
+
+/*White color*/
+.whiteColor{
+    color: rgb(255, 255, 255);
+}
+
+/*Header*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    overflow: visible;
+    padding: 0 30px;
+    background-color:rgba(254, 244, 226 , 0.9);
+}
+
+.header .logo{
+    float: left;
+}
+
+.header .headerElements{
+    float: left;
+    margin-left: 150px;
+}
+
+.header .headerElements .ulHeaderElements{
+    list-style: none;
+}
+
+.header .headerElements .ulHeaderElements .liHeaderElements{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 18px;
+}
+
+.header .headerElements .ulHeaderElements .liHeaderElements .linksHeader{
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header .headerElements .ulHeaderElements .liHeaderElements .linksHeader::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(120, 42, 17 );
+    transition: all 0.5s;
+}
+
+.header .headerElements .ulHeaderElements .liHeaderElements .linksHeader:hover::after{
+    width: 100%;
+    height: 3px;
+}
+
+.header .headerElements .ulHeaderElements .dropDown {
+    position: relative;
+}
+
+.header .headerElements .ulHeaderElements .dropDown .dropDownLinks {
+    list-style: none;
+    opacity: 0;
+    visibility: hidden; 
+    position: absolute;
+    top:25px; 
+    left: 5px; 
+    background-color: #faf5f5;
+    width: 160px;
+    padding:5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(120, 42, 17 );
+    z-index: 101; 
+    transition: all 0.5s;
+}
+
+.header .headerElements .ulHeaderElements .dropDown .dropDownLinks li{
+    margin: 15px 0;
+}
+
+.header .headerElements .ulHeaderElements .dropDown:hover .dropDownLinks {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .searchContainer{
+   position: relative;
+   float: right;
+   margin-top: 15px; 
+}
+
+.header .searchContainer .search{
+    width: 280px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 35px;
+}
+
+.header .searchContainer i{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 20px;
+    z-index: 3;
+    color: rgb(120, 42, 17 );
+}
+
+/*Home Page*/
+.homePage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/HeroImg.png) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.homePage .homePageElements{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    color: rgb(254, 244, 226);
+}
+
+.homePage .homePageElements .titleHomePage{
+    font-family: "Bona Nova SC", serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.homePage .homePageElements .textHomePage{
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.homePage .homePageElements .btnHomePage{
+   width: 140px;
+   height: 50px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 10px;
+   font-size: 15px;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.homePage .homePageElements .start{
+    background-color: rgb(120, 42, 17);
+    margin-right: 5px;
+}
+
+.homePage .homePageElements .learnMore{
+    background-color: rgb(254, 244, 226);
+}
+
+.homePage .homePageElements .btnHomePage:hover{
+    opacity: 0.5;
+} 
+
+/*Welcome Page*/
+.welcomaPage .welcomePageElements{
+    height: 80vh;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3{
+    position: relative;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3 .iconWelcomePAge{
+    font-size: 30px;
+    padding : 20px 0;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3 .textWelcomePage .h3TextWelcomePage{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.5s ;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3:hover .textWelcomePage .h3TextWelcomePage{
+    color: rgb(120, 42, 17 );
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3 .textWelcomePage .pTextWelcomePage{
+    margin-bottom: 20px;
+    color: rgb(84, 84, 84);
+    transition: all 0.5s ;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3:hover .textWelcomePage .pTextWelcomePage{
+    color: black;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3 .textWelcomePage .linkWelcomePage{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 244, 226 , 0.7);
+    z-index: -1;
+    transition: all 0.5s ;
+    border-radius: 20px;
+}
+
+.welcomaPage .welcomePageElements .containerElements3 .Elements3:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* Collection Page */
+.collectionPage{
+    width: 100%;
+    background-color: rgba(255, 249, 240 , 0.5);
+}
+
+.collectionPage .collectionContainer{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.collectionPage .collectionContainer .containerElements3{
+     margin-left: 130px;
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3{
+    width: 25%;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    position: relative;
+    border: 0;
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3 .contextImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3 .contextImg .titleContext{
+    font-size: 30px;
+    font-weight: bold;
+    margin:40px 0;
+    color: rgb(255, 238, 211);
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3 .contextImg .textContext{
+   margin: 40px 0;
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3 .contextImg .iconCollection{
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+    padding-top: 8px;
+    background-color: white;
+}
+
+.collectionPage .collectionContainer .containerElements3 .Elements3:hover .contextImg{
+   opacity: 1;
+}
+
+/*Gift Page*/
+.giftPage .giftContainer{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.giftPage .giftContainer .containerElements3{
+    margin-left: 100px;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3{
+    width: 28%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding:30px 10px 10px 20px;
+    height: 220px;
+    overflow: auto;
+    position: relative;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3 .iconsGift{
+     float: left;
+     font-size: 30px;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3 .contextGift{
+    float: right;
+    color: rgb(82, 81, 80);
+    margin-left: 50px;
+    margin-top: -30px;
+    text-align: left;
+    transition: all 0.5s;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3:hover .contextGift{
+    color: black;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3 .contextGift .titleContextGift{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3:hover .contextGift .titleContextGift{
+    color: rgb(120, 42, 17 );
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3 .contextGift .pContextGift{
+    margin-top: 10px;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 244, 226 , 0.7);
+    z-index: -1;
+    transition: all 0.5s ;
+    border-radius: 20px;
+}
+
+.giftPage .giftContainer .containerElements3 .Elements3:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* Choose Page */
+.choosePage .chooseElements{
+    overflow: auto;
+    margin-top: 150px;
+}
+
+.choosePage .chooseElements .textChoosePage{
+    float: left;
+    width: 50%;
+}
+
+.choosePage .chooseElements .textChoosePage .headeerChoosePAge .line{
+    margin: 0;
+    margin-top: -5px;
+}
+
+.choosePage .chooseElements .textChoosePage .headeerChoosePAge .pChoosePage{
+    margin-top: 30px;
+    color:rgb(137, 137, 137) ;
+}
+
+.choosePage .chooseElements .textChoosePage .headeerChoosePAge .ulChoosePage{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.choosePage .chooseElements .textChoosePage .headeerChoosePAge .ulChoosePage .liChoosePage{
+    margin-bottom: 20px;
+    color: rgb(87, 87, 87);
+}
+
+.choosePage .chooseElements .imageChoosePage{
+    float: right;
+}
+
+.choosePage .chooseElements .imageChoosePage .ulImageChoosePage{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choosePage .chooseElements .imageChoosePage .ulImageChoosePage .liImageChoosePage{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: rgba(251, 234, 202,0.5);
+}
+
+.choosePage .chooseElements .imageChoosePage .ulImageChoosePage .selected,
+.choosePage .chooseElements .imageChoosePage .ulImageChoosePage .liImageChoosePage:hover{
+    background-color: rgba(120, 42, 17,0.8);
+}
+
+/*Rating Page*/
+.ratingPage{
+    margin: auto;
+    width: 100%;
+    height:400px;
+    background-image: url(../Images/img8.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+.ratingPage .ratingContainer{
+    position: absolute;
+    overflow: auto;
+    padding-top: 150px;
+    padding-left: 150px;
+    z-index: 7;
+}
+
+.ratingPage .ratingContainer .ratingElements{
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+
+.ratingPage .ratingContainer .ratingElements i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ratingPage .ratingContainer .ratingElements .numberRating{
+    margin-bottom: 10px;
+}
+
+/*Price Page*/
+.pricePage{
+    width: 70%;
+    margin: auto;
+}
+
+.pricePage .priceContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3{
+    height: 400px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .titlePrice{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .priceDiv{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding-top: 30px;
+    border-radius: 50%;
+    border: inherit;
+    margin-bottom: 30px;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .priceDiv .price{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .advantageDiv .advantageUl{
+    list-style: none;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .advantageDiv .advantageUl .advantageLi{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+    transition: all 0.5s;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3:hover .advantageDiv .advantageUl .advantageLi{
+    color: black;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3 .BuyDiv .BuyButton{
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    border: 1px solid rgb(120, 42, 17 );
+    background-color: rgba(254, 244, 226 , 0.5);
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3:hover .BuyDiv .BuyButton{
+    background-color: rgb(120, 42, 17 );
+    color: white;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 244, 226 , 0.7);
+    z-index: -1;
+    transition: all 1s ;
+    border-radius: 20px;
+}
+
+.pricePage .priceContainer .containerElements3 .Elements3:hover::after{
+    height: 100%;
+}
+
+/*Feedback Page*/
+.feedbackPage{
+    width: 100%;
+    background-image: url(../Images/img9.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.feedbackPage .feedbackContainer{
+    width: 90%;
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+}
+
+.feedbackPage .feedbackContainer .titleFeedbak{
+    margin-left: 250px;
+}
+
+.feedbackPage .feedbackContainer .trustScore{
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3{
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3{
+    height: 300px;
+    border: none;
+    background-color: rgba(52, 52, 52, 0.539);
+    padding: 20px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .ratingComment{
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .ratingComment .iconsRating {
+    float: left;
+    font-size: 20px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .ratingComment .timeOfComment{
+    float: right;
+    color: rgb(210, 210, 210);
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .textComment{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson{
+    margin-top: 40px;
+    position: absolute;
+    bottom: 80px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .imgOfPerson{
+    width: 50px;
+    height:50px;
+    background-color: rgb(255, 223, 189);
+    border-radius: 50%;
+    position: absolute;
+    padding-top: 8px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .imgOfPerson span{
+    font-size: 30px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .nameAndPlace{
+    position: absolute;
+    left: 60px;
+    padding-top: 4px;
+    width: 300px;
+    text-align: left;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .nameAndPlace .nameOfPerson{
+    font-size: 25px;
+}
+
+.feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .nameAndPlace .placeOfPesron{
+    color: rgb(210, 210, 210);
+} 
+
+/*Team Page*/
+.teamPage .teamContainer{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3{
+    text-align: center;
+    border: none;
+    background-color: rgba(186, 186, 186, 0.3);
+    padding-top: 20px;
+    height: 320px;
+    position: relative;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .imgContainer{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .imgContainer img{
+    width: 100%;
+    height:200px
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .imgContainer .overlayImg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3:hover .imgContainer .overlayImg{
+    opacity: 1;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .imgContainer .overlayImg .linksTeam{
+    display: block;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(120, 42, 17 );
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .imgContainer .overlayImg .linksTeam i {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .contextOfTeam{
+    margin-top: 20px;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3 .contextOfTeam .nameOfJop{
+    margin-top: 10px;
+    color: black;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3::after{
+    content: "";
+    position: absolute;
+    width : 100%;
+    height :0%;
+    top : 0;
+    left : 0;
+    z-index: 5;
+    border-radius: 20px;
+    background-color: rgba(253, 231, 208, 0.4);
+    transition: all 0.5s;
+}
+
+.teamPage .teamContainer .containerElements3 .Elements3:hover::after{
+    width: 100%;
+    height:100%;
+}
+
+/*new Release Page*/
+.newRelease .releaseContainer{
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3{
+    text-align: center;
+    padding-top: 20px;
+    height: 600px;
+    position: relative;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .imgRelease img{
+    height: 250px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage{
+    margin: 20px 0;
+    margin-left: 7px;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts{
+    font-size: 15px;
+    display: inline;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts i{
+    font-size: 19px;
+    margin-right: 2px;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts .calendar{
+    color: rgb(136, 0, 0);
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts .dollar{
+    color: rgb(32, 108, 32);
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts .tint{
+    color: rgb(144, 144, 246);
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .infoPage .infoElemnts span{
+    margin-right: 15px;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .titleImg{
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3:hover .titleImg{
+    color: rgb(120, 42, 17 );
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .textImg{
+    padding: 0 20;
+    color: rgb(94, 94, 94);
+    transition: all 0.5s;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3:hover .textImg{
+    color: black;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3 .textImg .linksRelease{
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    text-decoration: none;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3::after{
+    content: "";
+    position: absolute;
+    width : 100%;
+    height :0%;
+    top : 0;
+    left : 0;
+    border-radius: 20px;
+    background-color: rgba(253, 234, 214, 0.4);
+    transition: all 0.5s;
+    z-index: -5;
+}
+
+.newRelease .releaseContainer .containerElements3 .Elements3:hover::after{
+    height:100%;
+}
+
+/*Footer Page*/
+.footerPage{
+    margin: auto;
+}
+
+.footerPage .footerContainer{
+     text-align: center;
+     background-color: rgba(255, 226, 214, 0.9);
+}
+
+.footerPage .footerContainer .imgFooter img{
+     width: 300px;
+     margin-top: 20px;
+}
+
+.footerPage .footerContainer .footerLikes .linksFooter {
+    display: inline-block;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.footerPage .footerContainer .footerLikes .linksFooter:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footerPage .footerContainer .footerLikes .linksFooter i {
+    line-height: 60px;
+    font-size: 40px;
+}
+
+.footerPage .footerContainer .lineFooter{
+    width: 80%;
+    margin: auto;
+    height:1px ;
+    margin-top: 70px ;
+    background-color: rgb(137, 137, 137);
+}
+
+.footerPage .footerContainer .copyRight{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(137, 137, 137);
+}
+
+/*Contact US*/
+.contactUs{
+    width: 200px;
+    height: 60px;
+    background-color: rgba(255, 226, 214, 0.7);
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    padding:10px;
+    z-index: 20;
+    border-radius: 40px;
+}
+
+.contactUs i {
+    position: absolute;
+    left: 20;
+    top: 15;
+    font-size: 25px;
+}
+
+.contactUs .Question{
+   position: absolute;
+   left: 60;
+   top: 10;
+}

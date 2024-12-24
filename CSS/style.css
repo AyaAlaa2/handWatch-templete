@@ -343,7 +343,7 @@
     font-size: 30px;
     font-weight: bold;
     margin:40px 0;
-    color: rgb(255, 238, 211);
+    color: rgb(255, 226, 214);
 }
 
 .collectionPage .collectionContainer .containerElements3 .Elements3 .contextImg .textContext{
@@ -679,7 +679,7 @@
 .feedbackPage .feedbackContainer .containerElements3 .Elements3 .informationPerson .imgOfPerson{
     width: 50px;
     height:50px;
-    background-color: rgb(255, 223, 189);
+    background-color: rgb(255, 226, 214);
     border-radius: 50%;
     position: absolute;
     padding-top: 8px;
